@@ -1,0 +1,246 @@
+/* Variables */
+:root {
+    --primary-color: #111144;
+    --secondary-color: #fdfdfd;
+    --font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Global styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    user-select: none;
+}
+
+
+body {
+    font-family: var(--font-family);
+    background-color: var(--primary-color);
+    overflow-x: hidden;
+    background-image: url(Assets/);
+}
+
+/* My information section */
+.info-section {
+    display: flex;
+    position: absolute;
+    margin-top: 5px;
+    color: white;
+    margin-left: 5%;
+    width: 800px;
+    height: 100%;
+}
+
+.info {
+    position: relative;
+    margin-top: 30vh;
+    display: flex;
+    z-index: 2;
+    color: rgb(213, 208, 208);
+    box-shadow: 1px 2px 15px 2px rgb(62, 11, 192);
+    width: 260px;
+    height: 300px;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    border-radius: 10px 10px 15% 10px;
+    animation: info 4s infinite ease-in-out;
+    font-family: sans-serif;
+    justify-content: inline;
+    background-color: #0603212e;
+}
+
+/* Animations */
+@keyframes info {
+    0% {
+        box-shadow: 1px 2px 15px 2px rgb(195, 187, 216);
+    }
+
+    50% {
+        box-shadow: 1px 2px 15px 2px rgb(62, 11, 192);
+    }
+
+    100% {
+        box-shadow: 1px 2px 15px 2px rgb(192, 186, 205);
+    }
+}
+
+/* Responsive design */
+@media (min-width: 200px) and (max-width: 767px) {
+    .info-section {
+        display: flex;
+        position: relative;
+        top: 10%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .info-section {
+        display: flex;
+        position: relative;
+        top: 10%;
+    }
+}
+
+@media (min-width: 1024px) {
+    /* Desktop styles */
+}
+
+/* Other styles */
+.hirebtn {
+    position: relative;
+    padding-top: 12%;
+}
+
+a {
+    text-decoration: none;
+}
+
+#hire {
+    position: relative;
+    padding-bottom: 2%;
+}
+
+#hire:hover {
+    transform: scale(1.2);
+    box-shadow: 1px 1px 1px 2px rgb(111, 24, 174);
+    animation: info 4s infinite ease-in-out;
+}
+
+.top-sec {
+    /* border: 1px solid white; */
+    margin: 5vh 30px;
+    width: calc(100% - 60px);
+    display: flex;
+    justify-content: flex-end;
+    padding: 10vh;
+    font-family: Arial, Helvetica, sans-serif;
+    align-items: center;
+
+    /* Added background color */
+    color: #fff;
+    /* Added text color */
+     background-image: url(Assets/use-svg-as-background-image-particle-strokes.svg);
+}
+
+.name-container {
+    display: block;
+    text-align: center;
+    background-image: url(Assets/use-svg-as-background-image-particle-strokes.svg);
+    /* Centered text */
+}
+
+.main-text {
+    margin: 10px;
+    display: inline-block;
+    animation: fade 2s infinite ease-in-out;
+    animation: fall 6s infinite ease-in;
+    font-size: 3rem;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(-10px);
+        opacity: 1;
+    }
+
+    25% {
+        transform: translateY(-5px);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+    75% {
+        transform: translateY(-10px);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(0px);
+        opacity: 1;
+    }
+}
+
+
+
+.sub-text {
+    margin: 1px;
+    display: inline-block;
+    font-size: 2rem;
+    padding: 0px;
+    margin-top: 0px;
+
+}
+
+@keyframes fade {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+
+    50% {
+        transform: scale(1.1);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* news  */
+.skill-section {
+    top: 0;
+    right: 0;
+    display: flex;
+    position: relative;
+
+}
+
+.skill {
+    position: relative;
+    margin-left: -10vw;
+    margin-top: 30vh;
+    padding: 150px;
+
+}
+
+.swiper {
+    width: 200px;
+    height: 300px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -150px;
+    margin-top: -150px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+}
+.spline{
+    /* box-shadow: 4px 4px 4px 4px red; */
+    z-index: -2;
+}
+
+spline-viewer {
+    transform: scale(1.5);
+    z-index: 2;
+    inset: 0;
+    height: 400px;
+    margin-top: 100vh;
+    
+   
+}
