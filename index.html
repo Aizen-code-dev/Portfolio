@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- css links -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- local css-->
+
+    <!-- bootstrap 5 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- tailwind -->
+    <!-- <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet"> -->
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+
+    <title>Codewithsatish</title>
+    <link id='favicon' rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-png">
+</head>
+
+<body>
+
+    <header>
+
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light gap-4" id="fnav">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#home"><i class="fa-solid fa-code"></i> CodeWithSatish</a>
+                <button style="border: none; text-decoration: none; outline: none;  box-shadow: none;"
+                    class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <!--custom bars animated  -->
+                    <label class="hamburger">
+                        <input type="checkbox">
+                        <svg viewBox="0 0 32 32">
+                            <path class="line line-top-bottom"
+                                d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
+                            </path>
+                            <path class="line" d="M7 16 27 16"></path>
+                        </svg>
+                    </label>
+
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Skills</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#education">Education</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#work">Projects</a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- header end -->
+
+
+    <div id="loader" class="loader text-center">
+        <svg class="pl" width="240" height="240" viewBox="0 0 240 240">
+            <circle class="pl__ring pl__ring--a" cx="120" cy="120" r="105" fill="none" stroke="#000" stroke-width="20"
+                stroke-dasharray="0 660" stroke-dashoffset="-330" stroke-linecap="round"></circle>
+            <circle class="pl__ring pl__ring--b" cx="120" cy="120" r="35" fill="none" stroke="#000" stroke-width="20"
+                stroke-dasharray="0 220" stroke-dashoffset="-110" stroke-linecap="round"></circle>
+            <circle class="pl__ring pl__ring--c" cx="85" cy="120" r="70" fill="none" stroke="#000" stroke-width="20"
+                stroke-dasharray="0 440" stroke-linecap="round"></circle>
+            <circle class="pl__ring pl__ring--d" cx="155" cy="120" r="70" fill="none" stroke="#000" stroke-width="20"
+                stroke-dasharray="0 440" stroke-linecap="round"></circle>
+        </svg>
+
+    </div>
+
+
+
+    <!-- hero section starts -->
+    <section class="home" id="home">
+
+
+        <div class="content">
+            <h2>Hi There,<br /> I'm Satish Bhitale <span></span></h2>
+            <p>i am into <span class="typing-text" id="typing-text"></span></p>
+            <a href="#about" class="btn"><span>About Me</span>
+                <i class="fas fa-arrow-circle-down"></i>
+            </a>
+            <div class="socials">
+                <ul class="social-icons">
+                    <li><a class="facebook" aria-label="Facebook" href="" target="_blank"><i
+                                class="fab fa-facebook"></i></a></li>
+                    <li><a class="instagram" aria-label="Instagram" href=""><i class="fab fa-instagram"
+                                target="_blank"></i></a></li>
+                    <li><a class="linkedin" aria-label="LinkedIn" href="" target="_blank"><i
+                                class="fab fa-linkedin"></i></a></li>
+                    <li><a class="twitter" aria-label="twitter" href="" target="_blank"><i
+                                class="fab fa-twitter"></i></a></li>
+                    <li><a class="github" aria-label="GitHub" href="" target="_blank"><i class="fab fa-github"></i></a>
+                    </li>
+                    <li><a class="dev" aria-label="Dev" href="" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="image">
+            <img src="./assets/images/shape.png" class="background-shape" alt="" height="">
+            <img draggable="false" class="tilt" src="./assets/images/personal.png" alt="" height="">
+        </div>
+
+    </section>
+    <!-- hero section ends -->
+    <!-- about  -->
+    <section class="about" id="about">
+        <h2 class="heading text-center"><i class="fas fa-user-alt"></i> About <span>Me</span></h2>
+
+        <div class="row">
+
+            <div class="image">
+                <img draggable="false" class="tilt" src="./assets/images/personal.png" alt="">
+            </div>
+            <div class="content">
+                <h3>I'm Satish Bhitale</h3>
+                <span class="tag">Full Stack Developer</span>
+
+                <p>I am a Full Stack Developer based in Thane, India.
+                    I am very passionate about improving my coding skills & developing applications & websites.
+                    I build WebApps and Websites using Spring boot.
+                    Working for myself to improve my skills.
+                    Love to build Full-Stack clones. </p>
+
+                <div class="box-container">
+                    <div class="box">
+                        <p><span> age: </span> 22</p>
+                        <p><span> phone : </span> +91 XXX-XXX-XXXX</p>
+                    </div>
+                    <div class="box">
+                        <p><span> email : </span> aizenofc@gmail.com</p>
+                        <p><span> place : </span> Maharastra , India</p>
+                    </div>
+                </div>
+
+                <div class="resumebtn">
+                    <a href="assets/#" target="_blank" class="btn"><span>Resume</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- skill -->
+        <h2 class="text-center m-4 ">My Skills</h2>
+        <section class="skills" id="skills">
+            <div class="skills-section">
+                <!-- skills -->
+                <!-- frontend skill -->
+                <div class="container">
+                    <h3 class="text-center">Front-End</h3>
+                    <div class="skill-box">
+                        <span class="title">HTML</span>
+
+                        <div class="skill-bar">
+                            <span class="skill-per html">
+                                <span class="tooltip">80%</span>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div class="skill-box">
+                        <span class="title">CSS</span>
+
+                        <div class="skill-bar">
+                            <span class="skill-per css">
+                                <span class="tooltip">80%</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="skill-box">
+                        <span class="title">JavaScript</span>
+
+                        <div class="skill-bar">
+                            <span class="skill-per javascript">
+                                <span class="tooltip">60%</span>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- bootstrap -->
+                    <div class="skill-box">
+                        <span class="title">bootstrap</span>
+
+                        <div class="skill-bar">
+                            <span class="skill-per css">
+                                <span class="tooltip">80%</span>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- backend skill -->
+                    <h3 class="text-center">Back-End</h3>
+
+                    <!-- mysql -->
+                    <div class="skill-box">
+                        <span class="title">MySQL</span>
+
+                        <div class="skill-bar">
+                            <span class="skill-per MySQL">
+                                <span class="tooltip">60%</span>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- sql -->
+                    <div class="skill-box">
+                        <span class="title">CSS</span>
+
+                        <div class="skill-bar">
+                            <span class="skill-per css">
+                                <span class="tooltip">80%</span>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- java -->
+                    <div class="skill-box">
+                        <span class="title">CSS</span>
+
+                        <div class="skill-bar">
+                            <span class="skill-per css">
+                                <span class="tooltip">80%</span>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- spring -->
+                    <div class="skill-box">
+                        <span class="title">CSS</span>
+
+                        <div class="skill-bar">
+                            <span class="skill-per css">
+                                <span class="tooltip">80%</span>
+                            </span>
+                        </div>
+                    </div>
+                    <!-- hibernate -->
+                    <div class="skill-box">
+                        <span class="title">CSS</span>
+
+                        <div class="skill-bar">
+                            <span class="skill-per css">
+                                <span class="tooltip">80%</span>
+                            </span>
+                        </div>
+                    </div>
+                    <h3 class="text-center">Others</h3>
+                    <!-- others -->
+                    <div class="skill-box">
+                        <span class="title">Cyber Security (intermidgeate)</span>
+
+                        <div class="skill-bar">
+                            <span class="skill-per css">
+                                <span class="tooltip">40%</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="skill-box">
+                        <span class="title">Unreal Engine</span>
+
+                        <div class="skill-bar">
+                            <span class="skill-per css">
+                                <span class="tooltip">30%</span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="skill-box">
+                        <span class="title">Canva and spline web design</span>
+
+                        <div class="skill-bar">
+                            <span class="skill-per css">
+                                <span class="tooltip">40%</span>
+                            </span>
+                        </div>
+                    </div>
+
+                </div>
+                <h2 class="text-center p-2 m-3">Professional Skills</h2>
+
+                <div class="professional-skills">
+                    <div class="circular-skill" data-skill="Project Management" data-percent="90">
+                        <svg>
+                            <circle class="progress-bg" cx="50" cy="50" r="45"></circle>
+                            <circle class="progress" cx="50" cy="50" r="45"></circle>
+                            <text class="percentage" x="50%" y="50%" dominant-baseline="middle"
+                                text-anchor="middle">90%</text>
+                        </svg>
+                        <div class="skill-name">Project Management</div>
+                    </div>
+                    <div class="circular-skill" data-skill="Communication" data-percent="85">
+                        <svg>
+                            <circle class="progress-bg" cx="50" cy="50" r="45"></circle>
+                            <circle class="progress" cx="50" cy="50" r="45"></circle>
+                            <text class="percentage" x="50%" y="50%" dominant-baseline="middle"
+                                text-anchor="middle">85%</text>
+                        </svg>
+                        <div class="skill-name">Communication</div>
+                    </div>
+                    <div class="circular-skill" data-skill="Teamwork" data-percent="80">
+                        <svg>
+                            <circle class="progress-bg" cx="50" cy="50" r="45"></circle>
+                            <circle class="progress" cx="50" cy="50" r="45"></circle>
+                            <text class="percentage" x="50%" y="50%" dominant-baseline="middle"
+                                text-anchor="middle">80%</text>
+                        </svg>
+                        <div class="skill-name">Teamwork</div>
+                    </div>
+                    <div class="circular-skill" data-skill="Problem Solving" data-percent="75">
+                        <svg>
+                            <circle class="progress-bg" cx="50" cy="50" r="45"></circle>
+                            <circle class="progress" cx="50" cy="50" r="45"></circle>
+                            <text class="percentage" x="50%" y="50%" dominant-baseline="middle"
+                                text-anchor="middle">75%</text>
+                        </svg>
+                        <div class="skill-name">Problem Solving</div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- educationS -->
+        <section id="education" class="education">
+            <header class="title text-center">
+                <h2>Education</h2>
+            </header>
+
+            <div class="contents">
+                <div class="box">
+                    <h4>2018 - 2022</h4>
+                    <h3>High School Degree</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                </div>
+
+                <div class="box">
+                    <h4>2018 - 2022</h4>
+                    <h3>Bachelor's Degree</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                </div>
+
+                <div class="box">
+                    <h4>2018 - 2022</h4>
+                    <h3>Master's Degree</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
+                        labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                </div>
+            </div>
+        </section>
+        <!-- projects -->
+        <section id="work" class="m-5 p-5">
+            <header class="title text-center m-3 pb-5">
+                <h2>Projects</h2>
+            </header>
+
+            <div class="wrapper">
+                <div class="card-box">
+                    <div class="card">
+                        <div class="align">
+                            <span class="red"></span>
+                            <span class="yellow"></span>
+                            <span class="green"></span>
+                        </div>
+
+                        <h1>GamStore </h1>
+                        <p>
+                            its an eccomerse website for gamers to buy video games online
+                        </p>
+                        <!-- button -->
+                        <a href="wwww.google.com">
+                            <button class="button">
+                                Get in touch
+                                <div class="hoverEffect">
+                                    <div></div>
+                                </div>
+                            </button>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="card-box">
+                    <div class="card">
+                        <div class="align">
+                            <span class="red"></span>
+                            <span class="yellow"></span>
+                            <span class="green"></span>
+                        </div>
+
+                        <h1>HOVER ME</h1>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde explicabo enim rem odio
+                            assumenda?
+                        </p>
+                        <!-- button -->
+                        <a href="wwww.google.com">
+                            <button class="button">
+                                Get in touch
+                                <div class="hoverEffect">
+                                    <div></div>
+                                </div>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-box">
+                    <div class="card">
+                        <div class="align">
+                            <span class="red"></span>
+                            <span class="yellow"></span>
+                            <span class="green"></span>
+                        </div>
+
+                        <h1>HOVER ME</h1>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde explicabo enim rem odio
+                            assumenda?
+                        </p>
+                        <!-- button -->
+                        <a href="wwww.google.com">
+                            <button class="button">
+                                Get in touch
+                                <div class="hoverEffect">
+                                    <div></div>
+                                </div>
+                            </button>
+                        </a>
+
+                    </div>
+                </div>
+                <div class="card-box">
+                    <div class="card">
+                        <div class="align">
+                            <span class="red"></span>
+                            <span class="yellow"></span>
+                            <span class="green"></span>
+                        </div>
+
+                        <h1>HOVER ME</h1>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde explicabo enim rem odio
+                            assumenda?
+                        </p>
+                        <!-- button -->
+                        <a href="wwww.google.com">
+                            <button class="button">
+                                Get in touch
+                                <div class="hoverEffect">
+                                    <div></div>
+                                </div>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-box">
+                    <div class="card">
+                        <div class="align">
+                            <span class="red"></span>
+                            <span class="yellow"></span>
+                            <span class="green"></span>
+                        </div>
+
+                        <h1>HOVER ME</h1>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde explicabo enim rem odio
+                            assumenda?
+                        </p>
+                        <!-- button -->
+                        <a href="wwww.google.com">
+                            <button class="button">
+                                Get in touch
+                                <div class="hoverEffect">
+                                    <div></div>
+                                </div>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+                <div class="card-box">
+                    <div class="card">
+                        <div class="align">
+                            <span class="red"></span>
+                            <span class="yellow"></span>
+                            <span class="green"></span>
+                        </div>
+
+                        <h1>HOVER ME</h1>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Unde explicabo enim rem odio
+                            assumenda?
+                        </p>
+                        <!-- button -->
+                        <a href="wwww.google.com">
+                            <button class="button">
+                                Get in touch
+                                <div class="hoverEffect">
+                                    <div></div>
+                                </div>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- footer -->
+        <div class="bg-dark">
+
+            <footer class="bg-dark">
+
+                <div class="footer-bottom bg-dark">
+                    <p>© 2024 Codewithsatish. All rights reserved.</p>
+                </div>
+
+            </footer>
+            <!-- form -->
+            <div class="footer-section contact-form">
+                <h2 class="text-center">Get in touch</h2>
+                <div class="login-box">
+                    <form>
+                        <div class="user-box">
+                            <input type="email" name="" required="">
+                            <label>Email</label>
+                        </div>
+                        <div class="user-box">
+                            <textarea name="msg" id="msg"></textarea> <label>Message</label>
+                        </div>
+                        <center>
+                            <a href="#">
+                                Hire
+                                <span></span>
+                            </a>
+                        </center>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- scripts -->
+        <script src="https://kit.fontawesome.com/95a2002ecf.js" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+        <script src="assets/js/script.js"></script>
+        <!-- <script
+   src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script> -->
+</body>
+
+</html>
+/end(code)
